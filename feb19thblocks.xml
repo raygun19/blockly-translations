@@ -1,4 +1,8 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="factory_base" id="{-]mw4~7x@-!KvJ~QO7(" deletable="false" movable="false" x="10" y="10">
+<xml xmlns="https://developers.google.com/blockly/xml">
+<!--     ADD NEW BLOCKS HERE      -->
+    
+<!--     TRANSLATED BLOCKS CONTINUE HERE. DO NOT MODIFY BELOW THIS LINE.      -->
+    <block type="factory_base" id="{-]mw4~7x@-!KvJ~QO7(" deletable="false" movable="false" x="10" y="10">
     <mutation connections="BOTH"></mutation>
     <field name="NAME">set_default_height</field>
     <field name="INLINE">AUTO</field>
