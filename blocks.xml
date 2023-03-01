@@ -1,6 +1,242 @@
 <xml xmlns="https://developers.google.com/blockly/xml">
 <!--     ADD NEW BLOCKS HERE      -->
-    
+    <block type="factory_base" id="S,@92%J{z15lzA#UGu(J" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">circle</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="1kB9Fudo4i7%@dhwWS8B">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_label_serializable" id="^m?l7#1$N{!Y,LflJJ^3">
+            <field name="TEXT">Go in circle of radius</field>
+            <field name="FIELDNAME">Circular motion</field>
+            <next>
+              <block type="field_number" id="yE/Zh%;%]wxN8MibK*]A">
+                <field name="VALUE">0</field>
+                <field name="FIELDNAME">radius_m</field>
+                <field name="MIN">0</field>
+                <field name="MAX">Infinity</field>
+                <field name="PRECISION">0</field>
+                <next>
+                  <block type="field_static" id="O5y#;MesF-yb`u1($]j*">
+                    <field name="TEXT">m</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="input_dummy" id=";lcFzZOQ,ZSu|Ak2pVV7">
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_static" id=".LkWkg?aE6.+$=?vyuw?">
+                <field name="TEXT">at speed</field>
+                <next>
+                  <block type="field_number" id="$o6gL2Lzdd/Je^J5ZKFP">
+                    <field name="VALUE">0.2</field>
+                    <field name="FIELDNAME">velocity</field>
+                    <field name="MIN">-Infinity</field>
+                    <field name="MAX">Infinity</field>
+                    <field name="PRECISION">0</field>
+                    <next>
+                      <block type="field_static" id="+sQx5+RokKiHI?qbYyQp">
+                        <field name="TEXT">m/s</field>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="input_dummy" id=":?w/=l+HNvpYVhIQktRP">
+                <field name="ALIGN">LEFT</field>
+                <statement name="FIELDS">
+                  <block type="field_static" id="n`1}D^b|)mJA+sZgDsbF">
+                    <field name="TEXT">for</field>
+                    <next>
+                      <block type="field_angle" id="rQ~NZ$qN520_P$p0)7bN">
+                        <field name="ANGLE">90</field>
+                        <field name="FIELDNAME">angle_degrees</field>
+                        <next>
+                          <block type="field_static" id="K.rt5iV4OXH8x#=B]se*">
+                            <field name="TEXT">degrees,</field>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="input_dummy" id=";cV7[@~*65n1~2S(B/=o">
+                    <field name="ALIGN">LEFT</field>
+                    <statement name="FIELDS">
+                      <block type="field_dropdown" id="xz[/HpUJsNV~Y+.t,_.S">
+                        <mutation options="[&quot;text&quot;,&quot;text&quot;]"></mutation>
+                        <field name="FIELDNAME">direction</field>
+                        <field name="USER0">counterclockwise</field>
+                        <field name="CPU0">ccw</field>
+                        <field name="USER1">clockwise</field>
+                        <field name="CPU1">cw</field>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="ZUj,dwfoCxKqS^hD`+j|" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id=".KJ4-7LfV_LD#MgZu$M#" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="a?UdUPp*05nsza%EqRhh"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="kZ%^C5Td[vXZBY1ob5%4"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="m(Lx%[P0{2FkYB!U?t)w">
+        <mutation colour="#80a55b"></mutation>
+        <field name="HUE">90</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="w{0uKNE~_]5XB9/rk{`3" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="NONE"></mutation>
+    <field name="NAME">start linear motion</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">NONE</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="(VKd^64pxn)sv4W._vnE">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="8Ls*etxFid!E_:;?r!]?">
+            <field name="TEXT">Start linear motion with speeds in</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_dummy" id="=3[8LOK-h1)$Z-bJZhWS">
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_static" id="NJ,dAuGfiS-Q%N-x$Gy!">
+                <field name="TEXT">x direction: </field>
+                <next>
+                  <block type="field_number" id="9gzTXSy)}f.]nJ}JMMcf">
+                    <field name="VALUE">0</field>
+                    <field name="FIELDNAME">velocity_x_m</field>
+                    <field name="MIN">-Infinity</field>
+                    <field name="MAX">Infinity</field>
+                    <field name="PRECISION">0</field>
+                    <next>
+                      <block type="field_static" id="cZMApRBf6*2!`]xMj9[v">
+                        <field name="TEXT">m/s</field>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="input_dummy" id="1zz!qau102%EuXVW!5$n">
+                <field name="ALIGN">LEFT</field>
+                <statement name="FIELDS">
+                  <block type="field_static" id="c0}-F=*E)gHoT|X[u_bY">
+                    <field name="TEXT">y direction: </field>
+                    <next>
+                      <block type="field_number" id="~2JA,CJ$o9Y:Gb~^dwkq">
+                        <field name="VALUE">0</field>
+                        <field name="FIELDNAME">velocity_y_m</field>
+                        <field name="MIN">-Infinity</field>
+                        <field name="MAX">Infinity</field>
+                        <field name="PRECISION">0</field>
+                        <next>
+                          <block type="field_static" id="tUIUgd84jfXYw]15$_0c">
+                            <field name="TEXT">m/s</field>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="input_dummy" id="oXL+Ah+otArFHuy2Uvtn">
+                    <field name="ALIGN">LEFT</field>
+                    <statement name="FIELDS">
+                      <block type="field_static" id="@KJfXN7D?rpQY,RT/?GH">
+                        <field name="TEXT">z direction: </field>
+                        <next>
+                          <block type="field_number" id="bD9CgYlYBQ^VUOse1|OR">
+                            <field name="VALUE">0</field>
+                            <field name="FIELDNAME">velocity_z_m</field>
+                            <field name="MIN">-Infinity</field>
+                            <field name="MAX">Infinity</field>
+                            <field name="PRECISION">0</field>
+                            <next>
+                              <block type="field_static" id="{NsEI8,33X*C[{eG7^_n">
+                                <field name="TEXT">m/s</field>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="input_dummy" id="e4I.zv_2OofMLB5OT3]Q">
+                        <field name="ALIGN">LEFT</field>
+                        <statement name="FIELDS">
+                          <block type="field_static" id="*jiSeZP$dHoaWWlM@iUZ">
+                            <field name="TEXT">yaw:</field>
+                            <next>
+                              <block type="field_angle" id="V[#E}{__!K)z2rgv5n57">
+                                <field name="ANGLE">90</field>
+                                <field name="FIELDNAME">rate_yaw</field>
+                                <next>
+                                  <block type="field_static" id="}+(:nARs^Zy9Q}uI{4_f">
+                                    <field name="TEXT">/s</field>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="7}KFGYvr1Si5Z{_gD-A:" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="7+sz4IEd?tRFH9d~Ci]|" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="_6V}e]u6G!jv~4s(-n$~">
+        <mutation colour="#80a55b"></mutation>
+        <field name="HUE">90</field>
+      </block>
+    </value>
+  </block>
 <!--     TRANSLATED BLOCKS CONTINUE HERE. DO NOT MODIFY BELOW THIS LINE.      -->
   <block type="factory_base" id="/*?m7_h#[2EJV)!i=p64" deletable="false" movable="false" x="10" y="10">
     <mutation connections="BOTH"></mutation>
